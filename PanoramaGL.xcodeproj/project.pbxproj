@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A784EAC18D94ACC000C698C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784EAB18D94ACC000C698C /* Foundation.framework */; };
+		4A784EAE18D94ACC000C698C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784EAD18D94ACC000C698C /* CoreGraphics.framework */; };
+		4A784EB018D94ACC000C698C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784EAF18D94ACC000C698C /* UIKit.framework */; };
+		4A784EB618D94ACC000C698C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A784EB418D94ACC000C698C /* InfoPlist.strings */; };
+		4A784EB818D94ACC000C698C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A784EB718D94ACC000C698C /* main.m */; };
+		4A784EBC18D94ACC000C698C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A784EBB18D94ACC000C698C /* AppDelegate.m */; };
+		4A784EBF18D94ACC000C698C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A784EBD18D94ACC000C698C /* Main.storyboard */; };
+		4A784EC218D94ACC000C698C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A784EC118D94ACC000C698C /* ViewController.m */; };
+		4A784EC418D94ACC000C698C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A784EC318D94ACC000C698C /* Images.xcassets */; };
+		4A784ECB18D94ACC000C698C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784ECA18D94ACC000C698C /* XCTest.framework */; };
+		4A784ECC18D94ACC000C698C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784EAB18D94ACC000C698C /* Foundation.framework */; };
+		4A784ECD18D94ACC000C698C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A784EAF18D94ACC000C698C /* UIKit.framework */; };
+		4A784ED518D94ACC000C698C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A784ED318D94ACC000C698C /* InfoPlist.strings */; };
+		4A784ED718D94ACC000C698C /* PanoramaGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A784ED618D94ACC000C698C /* PanoramaGLTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A784ECE18D94ACC000C698C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A784EA018D94ACC000C698C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A784EA718D94ACC000C698C;
+			remoteInfo = PanoramaGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A784EA818D94ACC000C698C /* PanoramaGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanoramaGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A784EAB18D94ACC000C698C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A784EAD18D94ACC000C698C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4A784EAF18D94ACC000C698C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A784EB318D94ACC000C698C /* PanoramaGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanoramaGL-Info.plist"; sourceTree = "<group>"; };
+		4A784EB518D94ACC000C698C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A784EB718D94ACC000C698C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A784EB918D94ACC000C698C /* PanoramaGL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PanoramaGL-Prefix.pch"; sourceTree = "<group>"; };
+		4A784EBA18D94ACC000C698C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A784EBB18D94ACC000C698C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A784EBE18D94ACC000C698C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A784EC018D94ACC000C698C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A784EC118D94ACC000C698C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A784EC318D94ACC000C698C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A784EC918D94ACC000C698C /* PanoramaGLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaGLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A784ECA18D94ACC000C698C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4A784ED218D94ACC000C698C /* PanoramaGLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PanoramaGLTests-Info.plist"; sourceTree = "<group>"; };
+		4A784ED418D94ACC000C698C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A784ED618D94ACC000C698C /* PanoramaGLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanoramaGLTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A784EA518D94ACC000C698C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784EAE18D94ACC000C698C /* CoreGraphics.framework in Frameworks */,
+				4A784EB018D94ACC000C698C /* UIKit.framework in Frameworks */,
+				4A784EAC18D94ACC000C698C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A784EC618D94ACC000C698C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784ECB18D94ACC000C698C /* XCTest.framework in Frameworks */,
+				4A784ECD18D94ACC000C698C /* UIKit.framework in Frameworks */,
+				4A784ECC18D94ACC000C698C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A784E9F18D94ACC000C698C = {
+			isa = PBXGroup;
+			children = (
+				4A784EB118D94ACC000C698C /* PanoramaGL */,
+				4A784ED018D94ACC000C698C /* PanoramaGLTests */,
+				4A784EAA18D94ACC000C698C /* Frameworks */,
+				4A784EA918D94ACC000C698C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A784EA918D94ACC000C698C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A784EA818D94ACC000C698C /* PanoramaGL.app */,
+				4A784EC918D94ACC000C698C /* PanoramaGLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A784EAA18D94ACC000C698C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A784EAB18D94ACC000C698C /* Foundation.framework */,
+				4A784EAD18D94ACC000C698C /* CoreGraphics.framework */,
+				4A784EAF18D94ACC000C698C /* UIKit.framework */,
+				4A784ECA18D94ACC000C698C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A784EB118D94ACC000C698C /* PanoramaGL */ = {
+			isa = PBXGroup;
+			children = (
+				4A784EBA18D94ACC000C698C /* AppDelegate.h */,
+				4A784EBB18D94ACC000C698C /* AppDelegate.m */,
+				4A784EBD18D94ACC000C698C /* Main.storyboard */,
+				4A784EC018D94ACC000C698C /* ViewController.h */,
+				4A784EC118D94ACC000C698C /* ViewController.m */,
+				4A784EC318D94ACC000C698C /* Images.xcassets */,
+				4A784EB218D94ACC000C698C /* Supporting Files */,
+			);
+			path = PanoramaGL;
+			sourceTree = "<group>";
+		};
+		4A784EB218D94ACC000C698C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A784EB318D94ACC000C698C /* PanoramaGL-Info.plist */,
+				4A784EB418D94ACC000C698C /* InfoPlist.strings */,
+				4A784EB718D94ACC000C698C /* main.m */,
+				4A784EB918D94ACC000C698C /* PanoramaGL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A784ED018D94ACC000C698C /* PanoramaGLTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A784ED618D94ACC000C698C /* PanoramaGLTests.m */,
+				4A784ED118D94ACC000C698C /* Supporting Files */,
+			);
+			path = PanoramaGLTests;
+			sourceTree = "<group>";
+		};
+		4A784ED118D94ACC000C698C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A784ED218D94ACC000C698C /* PanoramaGLTests-Info.plist */,
+				4A784ED318D94ACC000C698C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A784EA718D94ACC000C698C /* PanoramaGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A784EDA18D94ACC000C698C /* Build configuration list for PBXNativeTarget "PanoramaGL" */;
+			buildPhases = (
+				4A784EA418D94ACC000C698C /* Sources */,
+				4A784EA518D94ACC000C698C /* Frameworks */,
+				4A784EA618D94ACC000C698C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PanoramaGL;
+			productName = PanoramaGL;
+			productReference = 4A784EA818D94ACC000C698C /* PanoramaGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A784EC818D94ACC000C698C /* PanoramaGLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A784EDD18D94ACC000C698C /* Build configuration list for PBXNativeTarget "PanoramaGLTests" */;
+			buildPhases = (
+				4A784EC518D94ACC000C698C /* Sources */,
+				4A784EC618D94ACC000C698C /* Frameworks */,
+				4A784EC718D94ACC000C698C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A784ECF18D94ACC000C698C /* PBXTargetDependency */,
+			);
+			name = PanoramaGLTests;
+			productName = PanoramaGLTests;
+			productReference = 4A784EC918D94ACC000C698C /* PanoramaGLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A784EA018D94ACC000C698C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Taagoo;
+				TargetAttributes = {
+					4A784EC818D94ACC000C698C = {
+						TestTargetID = 4A784EA718D94ACC000C698C;
+					};
+				};
+			};
+			buildConfigurationList = 4A784EA318D94ACC000C698C /* Build configuration list for PBXProject "PanoramaGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A784E9F18D94ACC000C698C;
+			productRefGroup = 4A784EA918D94ACC000C698C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A784EA718D94ACC000C698C /* PanoramaGL */,
+				4A784EC818D94ACC000C698C /* PanoramaGLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A784EA618D94ACC000C698C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784EC418D94ACC000C698C /* Images.xcassets in Resources */,
+				4A784EB618D94ACC000C698C /* InfoPlist.strings in Resources */,
+				4A784EBF18D94ACC000C698C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A784EC718D94ACC000C698C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784ED518D94ACC000C698C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A784EA418D94ACC000C698C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784EC218D94ACC000C698C /* ViewController.m in Sources */,
+				4A784EBC18D94ACC000C698C /* AppDelegate.m in Sources */,
+				4A784EB818D94ACC000C698C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A784EC518D94ACC000C698C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A784ED718D94ACC000C698C /* PanoramaGLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A784ECF18D94ACC000C698C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A784EA718D94ACC000C698C /* PanoramaGL */;
+			targetProxy = 4A784ECE18D94ACC000C698C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A784EB418D94ACC000C698C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A784EB518D94ACC000C698C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A784EBD18D94ACC000C698C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A784EBE18D94ACC000C698C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A784ED318D94ACC000C698C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A784ED418D94ACC000C698C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A784ED818D94ACC000C698C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A784ED918D94ACC000C698C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A784EDB18D94ACC000C698C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanoramaGL/PanoramaGL-Prefix.pch";
+				INFOPLIST_FILE = "PanoramaGL/PanoramaGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A784EDC18D94ACC000C698C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanoramaGL/PanoramaGL-Prefix.pch";
+				INFOPLIST_FILE = "PanoramaGL/PanoramaGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4A784EDE18D94ACC000C698C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PanoramaGL.app/PanoramaGL";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanoramaGL/PanoramaGL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PanoramaGLTests/PanoramaGLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4A784EDF18D94ACC000C698C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PanoramaGL.app/PanoramaGL";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PanoramaGL/PanoramaGL-Prefix.pch";
+				INFOPLIST_FILE = "PanoramaGLTests/PanoramaGLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A784EA318D94ACC000C698C /* Build configuration list for PBXProject "PanoramaGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A784ED818D94ACC000C698C /* Debug */,
+				4A784ED918D94ACC000C698C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A784EDA18D94ACC000C698C /* Build configuration list for PBXNativeTarget "PanoramaGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A784EDB18D94ACC000C698C /* Debug */,
+				4A784EDC18D94ACC000C698C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A784EDD18D94ACC000C698C /* Build configuration list for PBXNativeTarget "PanoramaGLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A784EDE18D94ACC000C698C /* Debug */,
+				4A784EDF18D94ACC000C698C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A784EA018D94ACC000C698C /* Project object */;
+}
