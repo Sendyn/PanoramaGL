@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "PLView.h"
+@interface ViewController : UIViewController <PLViewDelegate>
+{
+    PLView *plView;
+}
 @end
