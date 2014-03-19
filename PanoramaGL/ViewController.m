@@ -33,7 +33,20 @@
     PLHotspot *hotspot = [PLHotspot hotspotWithId:(kIdMin + random() % ((kIdMax + 1) - kIdMin)) texture:hotspotTexture atv:0.0f ath:0.0f width:0.08f height:0.08f];
     [panorama addHotspot:hotspot];
     [plView setPanorama:panorama];
+    [plView startAnimation];//初始时开始播放
     [self.view addSubview:plView];
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(movePLView:) userInfo:nil repeats:YES];
+}
+-(void)movePLView:(NSTimer *)theTimer
+{
+    PLRotation rotation = plView.camera.rotation;
+    rotation.roll = rotation.roll + 0.1;
+    plView.camera.rotation = PLRotationMake(rotation.pitch, rotation.yaw, rotation.roll);
 }
 
 - (void)didReceiveMemoryWarning

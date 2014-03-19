@@ -599,7 +599,7 @@
 	
 	if(delegate && [delegate respondsToSelector:@selector(view:shouldBeginTouching:withEvent:)] && ![delegate view:self shouldBeginTouching:eventTouches withEvent:event])
 		return;
-	
+
 	switch([[eventTouches anyObject] tapCount])
 	{
 		case 1:
@@ -652,30 +652,30 @@
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-//	if(delegate && [delegate respondsToSelector:@selector(view:touchesMoved:withEvent:)])
-//		[delegate view:self touchesMoved:touches withEvent:event];
-//	
-//	if(isBlocked || !scene || [self getIsValidForTransition])
-//		return;
-//	
+	if(delegate && [delegate respondsToSelector:@selector(view:touchesMoved:withEvent:)])
+		[delegate view:self touchesMoved:touches withEvent:event];
+
+	if(isBlocked || !scene || [self getIsValidForTransition])
+		return;
+
 	NSSet *eventTouches = [event allTouches];
-//
-//	if(![self isTouchInView:eventTouches])
-//		return;
-//
-//	touchStatus = PLTouchStatusMoved;
-//	
-//	if(delegate && [delegate respondsToSelector:@selector(view:shouldTouch:withEvent:)] && ![delegate view:self shouldTouch:eventTouches withEvent:event])
-//		return;
+
+	if(![self isTouchInView:eventTouches])
+		return;
+
+	touchStatus = PLTouchStatusMoved;
+	
+	if(delegate && [delegate respondsToSelector:@selector(view:shouldTouch:withEvent:)] && ![delegate view:self shouldTouch:eventTouches withEvent:event])
+		return;
 
 	if(![self executeDefaultAction:eventTouches eventType:PLTouchEventTypeMoved])
 		endPoint = [self getLocationOfFirstTouch:eventTouches];
-//
-//	if(delegate && [delegate respondsToSelector:@selector(view:didTouch:withEvent:)])
-//		[delegate view:self didTouch:eventTouches withEvent:event];
+
+	if(delegate && [delegate respondsToSelector:@selector(view:didTouch:withEvent:)])
+		[delegate view:self didTouch:eventTouches withEvent:event];
 }
 
-/*
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {	
 	if(delegate && [delegate respondsToSelector:@selector(view:touchesEnded:withEvent:)])
@@ -756,7 +756,7 @@
 	if(delegate && [delegate respondsToSelector:@selector(view:didEndTouching:withEvent:)])
 		[delegate view:self didEndTouching:eventTouches withEvent:event];
 }
-*/
+
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self stopAnimationInternally];

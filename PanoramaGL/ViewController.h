@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController <PLViewDelegate>
 {
     PLView *plView;
+    NSTimer *timer;
 }
 @end
